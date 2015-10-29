@@ -6,23 +6,23 @@ import java.util.Scanner;
 public class Character {
     int i;
     int[] healthPoints = {
-            100, 75, 150, 100, 100, 100
+            100, 75, 150, 75, 100, 100
     };
     int[] damage = {
-            50, 300, 35, 50, 50, 50
+            50, 300, 35, 75, 50, 50
     };
     int[] fireRate = {
-            100, 200, 50, 100, 100, 100
+            100, 200, 50, 75, 100, 100
     };
     int[] speed = {
-            100, 100, 70, 100, 100, 100
+            100, 100, 70, 200, 100, 100
     };
     int[] mana = {
             100, 100, 100, 100, 100, 100
     };
     private static ArrayList<Integer> character = new ArrayList<Integer>();
     public Character (int i){
-        this.i = i;
+        this.i = i - 1;
     }
     public ArrayList returnCharacter() {
         character.add(healthPoints[i]);
@@ -47,7 +47,4 @@ public class Character {
 //            character.returnCharacter();
 //        }
 //    }
-    public ArrayList getPlayerAttributes() {
-        return character;
-    }
 }

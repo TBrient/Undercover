@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.lang.*;
 import java.lang.reflect.Array;
 
 /**
@@ -55,7 +56,8 @@ public class Begin {
                             break;
                         }
                         case (4): {
-                            System.out.println("You selected Yellow");
+                            System.out.println("You selected Scout");
+                            character = new Character(4);
                             break;
                         }
                     }
@@ -66,5 +68,9 @@ public class Begin {
 
     public int getLocation() {
         return Location;
+    }
+
+    public Character getCharacter(){
+        return character;
     }
 }
