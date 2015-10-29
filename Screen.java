@@ -37,7 +37,7 @@ public class Screen extends JPanel implements ActionListener {
 
     public void drawSelect(Graphics2D g2) {
         g2.setColor(new Color(65, 255, 230, 40));
-        Main main = new Main();
+        Begin main = new Begin();
         int Location = main.getLocation();
         if (Location == 1)     {
             g2.fillRoundRect(125, 375, 250, 250, 25, 25);
