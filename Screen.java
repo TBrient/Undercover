@@ -39,16 +39,41 @@ public class Screen extends JPanel implements ActionListener {
         g2.setColor(new Color(65, 255, 230, 40));
         Begin main = new Begin();
         int Location = main.getLocation();
-        if (Location == 1)     {
-            g2.fillRoundRect(125, 375, 250, 250, 25, 25);
-        } else if (Location == 2) {
-            g2.fillRoundRect(425, 375, 250, 250, 25, 25);
-        } else if (Location == 3) {
-            g2.fillRoundRect(725, 375, 250, 250, 25, 25);
-        } else if (Location == 4) {
-            g2.fillRoundRect(1025, 375, 250, 250, 25, 25);
-        } else{
-            System.out.println("Oh Shit");
+        switch(Location) {
+            case (1) : {
+                g2.fillRoundRect(125, 375, 250, 250, 25, 25);
+                break;
+            }
+            case (2) : {
+                g2.fillRoundRect(425, 375, 250, 250, 25, 25);
+                break;
+            }
+            case (3) : {
+                g2.fillRoundRect(725, 375, 250, 250, 25, 25);
+                break;
+            }
+            case (4) : {
+                g2.fillRoundRect(1025, 375, 250, 250, 25, 25);
+            }
         }
+        switch(Location) {
+            case(1) : {
+                g2.setColor(Color.RED);
+                break;
+            }
+            case (2) : {
+                g2.setColor(Color.GREEN);
+                break;
+            }
+            case (3) : {
+                g2.setColor(Color.BLUE);
+                break;
+            }
+            case (4) : {
+                g2.setColor(Color.YELLOW);
+                break;
+            }
+        }
+        g2.fillRoundRect(700, 100, 50, 50, 25, 25);
     }
 }
