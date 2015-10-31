@@ -16,7 +16,7 @@ public class AudioThread extends Thread {
 
     public void run() {
         try {
-            FileInputStream audioInputStream = new FileInputStream("D:\\Programming\\Programs\\IdeaProjects\\UndercoverActive\\source\\Audio\\AudioFiles\\Music.mp3");
+            FileInputStream audioInputStream = new FileInputStream("/Users/kanming_xu/IdeaProjects/KanmingJackTylerGameProject/source/Audio/AudioFiles/Music.mp3");
             final Player audioPlayer = new Player(audioInputStream);
             audioPlayer.play();
             Timer timer = new Timer(1000 / 60, new ActionListener() {
