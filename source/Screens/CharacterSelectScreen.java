@@ -1,26 +1,18 @@
-<<<<<<< HEAD:source/Screens/CharacterSelectScreen.java
 package source.Screens;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
-=======
-import javax.swing.*;
 import java.awt.image.BufferedImage;
->>>>>>> b6d111efd4b992744c7ad11b21dad07c8aed9fbf:CharacterSelectScreen.java
 
 /**
  * Created by tyler_brient on 10/29/15.
  */
-<<<<<<< HEAD:source/Screens/CharacterSelectScreen.java
 public class CharacterSelectScreen extends Screen {
 
     private int location = 0;
-
-=======
-public class CharacterSelectScreen extends JPanel {
     private BufferedImage ScoutImage;
->>>>>>> b6d111efd4b992744c7ad11b21dad07c8aed9fbf:CharacterSelectScreen.java
-    public void drawClasses(Graphics2D g2) {
+
+    public void draw(Graphics2D g2, int width, int height) {
         g2.setColor(new Color(125, 94, 38));
         g2.fillRect(0, 0, 1400, 800);
         g2.setColor(Color.RED);
@@ -31,10 +23,10 @@ public class CharacterSelectScreen extends JPanel {
         g2.fillRoundRect(750, 400, 200, 200, 25, 25);
         g2.setColor(Color.YELLOW);
         g2.fillRoundRect(1050, 400, 200, 200, 25, 25);
-        draw(g2);
+        drawCubes(g2);
     }
 
-    public void draw(Graphics2D g2) {
+    public void drawCubes(Graphics2D g2) {
         g2.setColor(new Color(65, 255, 230, 40));
         switch(location) {
             case (1) : {

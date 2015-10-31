@@ -1,5 +1,9 @@
 package source;
 
+import source.Screens.CharacterSelectScreen;
+import source.Screens.ScreenHandler;
+import source.Screens.TitleScreen;
+
 import javax.swing.*;
 
 /**
@@ -10,9 +14,11 @@ public class Display {
         JFrame window = new JFrame("Selection source.Screens.Screen");
         window.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         window.setBounds(0, 0, 1400, 800);
-        Canvas screen = new Canvas();
-        window.add(screen);
-        window.addKeyListener(new Listener());
+        ScreenHandler screenHandler = new ScreenHandler();
+        screenHandler.addScreen(new TitleScreen());
+        screenHandler.addScreen(new CharacterSelectScreen());
+        window.add(new Canvas(screenHandler));
+        window.addKeyListener(new Listener(screenHandler));
         window.setVisible(true);
     }
 }

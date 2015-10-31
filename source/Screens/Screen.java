@@ -8,7 +8,7 @@ import java.awt.event.KeyEvent;
  * The base that all screens in the game should be modeled on.
  */
 public abstract class Screen {
-    public abstract void draw(Graphics2D g2);
+    public abstract void draw(Graphics2D g2, int width, int height);
 
     public abstract void keyPressed(KeyEvent e);
 }

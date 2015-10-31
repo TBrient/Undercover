@@ -1,6 +1,5 @@
 package source;
 
-import source.Screens.Screen;
 import source.Screens.ScreenHandler;
 
 import java.awt.event.KeyEvent;
@@ -11,7 +10,11 @@ import java.awt.event.KeyListener;
  */
 public class Listener implements KeyListener {
 
-    private Screen screen;
+    private ScreenHandler screenHandler;
+
+    public Listener(ScreenHandler screenHandler) {
+        this.screenHandler = screenHandler;
+    }
 
     @Override
     public void keyTyped(KeyEvent e) {
@@ -20,7 +23,7 @@ public class Listener implements KeyListener {
 
     @Override
     public void keyPressed(KeyEvent e) {
-        ScreenHandler.getScreen().keyPressed(e);
+        screenHandler.getCurrentScreen().keyPressed(e);
     }
 
     @Override

@@ -1,6 +1,5 @@
 package source;
 
-import source.Screens.CharacterSelectScreen;
 import source.Screens.ScreenHandler;
 
 import javax.swing.*;
@@ -13,12 +12,13 @@ import java.awt.event.ActionListener;
  */
 public class Canvas extends JPanel implements ActionListener{
 
-    private CharacterSelectScreen CharSelect = new CharacterSelectScreen();
+    private ScreenHandler screenHandler;
 
-    public Canvas() {
+    public Canvas(ScreenHandler screenHandler) {
         Timer timer = new Timer(1000 / 60, this);
         timer.start();
-        ScreenHandler.setScreen(CharSelect);
+        this.screenHandler = screenHandler;
+        screenHandler.setScreen(0);
     }
 
     public void paintComponent(Graphics g) {
@@ -26,7 +26,7 @@ public class Canvas extends JPanel implements ActionListener{
         Graphics2D g2 = (Graphics2D)g;
 
         //All drawing done here.
-        CharSelect.drawClasses(g2);
+        screenHandler.getCurrentScreen().draw(g2, getWidth(), getHeight());
     }
 
     @Override
