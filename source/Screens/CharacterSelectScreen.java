@@ -14,6 +14,7 @@ public class CharacterSelectScreen extends Screen {
     private int location = 1;
     private static int characterChosen = 0;
     private Image scout, rifle, machine, sniper, bulletin;
+    private int imageWidth, imageWidthGap;
 
     public CharacterSelectScreen() {
         try {
@@ -22,16 +23,17 @@ public class CharacterSelectScreen extends Screen {
             rifle = ImageIO.read(new File(getClass().getResource("screenAssets/Rifleman.png").getPath()));
             machine = ImageIO.read(new File(getClass().getResource("screenAssets/MachineGunner.png").getPath()));
             sniper = ImageIO.read(new File(getClass().getResource("screenAssets/Sniper.png").getPath()));
+            imageWidth = sniper.getWidth(null);
         } catch (IOException e) {
            e.printStackTrace();
         }
     }
     public void draw(Graphics2D g2, int width, int height) {
         g2.drawImage(bulletin.getScaledInstance(width, height, Image.SCALE_SMOOTH), 0, 0, null);
-        g2.drawImage(scout.getScaledInstance(rifle.getWidth(null), rifle.getHeight(null), Image.SCALE_SMOOTH), 0,0,null);
-        g2.drawImage(rifle, rifle.getWidth(null),0,null);
-        g2.drawImage(machine,0,machine.getHeight(null),null);
-        g2.drawImage(sniper,sniper.getWidth(null),sniper.getHeight(null),null);
+        g2.drawImage(scout, 0,0,null);
+        g2.drawImage(rifle, imageWidth,0,null);
+        g2.drawImage(machine,imageWidth * 2, 0,null);
+        g2.drawImage(sniper,imageWidth * 3, 0,null);
     }
 
 //    public void drawCubes(Graphics2D g2) {
