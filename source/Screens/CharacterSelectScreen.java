@@ -5,6 +5,7 @@ import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 
 /**
  * Created by tyler_brient on 10/29/15.
@@ -14,26 +15,29 @@ public class CharacterSelectScreen extends Screen {
     private int location = 1;
     private static int characterChosen = 0;
     private Image scout, rifle, machine, sniper, bulletin;
+    private ArrayList<Image> images;
     private int imageWidth, imageWidthGap;
 
     public CharacterSelectScreen() {
+        images = new ArrayList<Image>();
         try {
-            bulletin = ImageIO.read(new File(getClass().getResource("screenAssets/Bulletin.jpg").getPath()));
-            scout = ImageIO.read(new File(getClass().getResource("screenAssets/Scout.png").getPath()));
-            rifle = ImageIO.read(new File(getClass().getResource("screenAssets/Rifleman.png").getPath()));
-            machine = ImageIO.read(new File(getClass().getResource("screenAssets/MachineGunner.png").getPath()));
-            sniper = ImageIO.read(new File(getClass().getResource("screenAssets/Sniper.png").getPath()));
-            imageWidth = sniper.getWidth(null);
+            images.add(ImageIO.read(new File(getClass().getResource("screenAssets/Bulletin.jpg").getPath())));
+            images.add(ImageIO.read(new File(getClass().getResource("screenAssets/Scout.png").getPath())));
+            images.add(ImageIO.read(new File(getClass().getResource("screenAssets/Rifleman.png").getPath())));
+            images.add(ImageIO.read(new File(getClass().getResource("screenAssets/MachineGunner.png").getPath())));
+            images.add(ImageIO.read(new File(getClass().getResource("screenAssets/Sniper.png").getPath())));
+            imageWidth = images.get(1).getWidth(null);
         } catch (IOException e) {
            e.printStackTrace();
         }
     }
     public void draw(Graphics2D g2, int width, int height) {
-        g2.drawImage(bulletin.getScaledInstance(width, height, Image.SCALE_SMOOTH), 0, 0, null);
-        g2.drawImage(scout, 0,0,null);
-        g2.drawImage(rifle, imageWidth,0,null);
-        g2.drawImage(machine,imageWidth * 2, 0,null);
-        g2.drawImage(sniper,imageWidth * 3, 0,null);
+        g2.drawImage(images.get(0).getScaledInstance(width, height, Image.SCALE_SMOOTH), 0, 0, null);
+        g2.fillRect(images.get(location).getWidth(null) * (location - 1), 0, images.get(1).getWidth(null), images.get(1).getHeight(null) + 20);
+        g2.drawImage(images.get(1), 0,0,null);
+        g2.drawImage(images.get(2),imageWidth,0,null);
+        g2.drawImage(images.get(3),imageWidth * 2, 0,null);
+        g2.drawImage(images.get(4),imageWidth * 3, 0,null);
     }
 
 //    public void drawCubes(Graphics2D g2) {
@@ -97,11 +101,11 @@ public class CharacterSelectScreen extends Screen {
 
                 switch (location) {
                     case (1): {
-                        System.out.println("You Selected Rifleman");
+                        System.out.println("You Selected Scout");
                         break;
                     }
                     case (2): {
-                        System.out.println("You selected Sniper");
+                        System.out.println("You selected Rifleman");
                         break;
                     }
                     case (3): {
@@ -109,18 +113,11 @@ public class CharacterSelectScreen extends Screen {
                         break;
                     }
                     case (4): {
-                        System.out.println("You selected Scout");
+                        System.out.println("You selected Sniper");
                         break;
                     }
                 }
-
-                try {
-                    Thread.sleep(500);
-                } catch (InterruptedException e1) {
-                    e1.printStackTrace();
-                }
-
-
+                ScreenHandler.setScreen(2);
             }
         }
 
