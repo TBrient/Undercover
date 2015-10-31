@@ -1,41 +1,38 @@
 package source.Threads;
 
-import javazoom.jl.decoder.JavaLayerException;
-import javazoom.jl.player.Player;
+import javafx.embed.swing.JFXPanel;
+import javafx.scene.media.MediaPlayer;
 
-import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+import java.net.URISyntaxException;
+import java.util.concurrent.CountDownLatch;
 
 /**
  * Created by Jack on 10/31/2015.
  */
-public class AudioThread extends Thread {
+public class AudioThread extends Thread implements Runnable {
+
+    private MediaPlayer mediaPlayer;
+    private boolean latchWorked;
 
     public void run() {
+        latchWorked = false;
+        new JFXPanel();
+        CountDownLatch latch = new CountDownLatch(1);
+        latch.countDown();
+        while (!latchWorked) {
+            try {
+                latch.await();
+                latchWorked = true;
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
         try {
-            FileInputStream audioInputStream = new FileInputStream("/Users/kanming_xu/IdeaProjects/KanmingJackTylerGameProject/source/Audio/AudioFiles/Music.mp3");
-            final Player audioPlayer = new Player(audioInputStream);
-            audioPlayer.play();
-            Timer timer = new Timer(1000 / 60, new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    if(audioPlayer.isComplete()) {
-                        try {
-                            audioPlayer.play();
-                        } catch (JavaLayerException e1) {
-                            e1.printStackTrace();
-                        }
-                    }
-                }
-            });
-            timer.start();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (JavaLayerException e) {
+            mediaPlayer = new MediaPlayer(new javafx.scene.media.Media(getClass().getResource("../Audio/AudioFiles/Music.mp3").toURI().toString()));
+        } catch (URISyntaxException e) {
             e.printStackTrace();
         }
+        mediaPlayer.play();
+        mediaPlayer.setOnEndOfMedia(this);
     }
 }

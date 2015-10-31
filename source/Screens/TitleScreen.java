@@ -32,6 +32,7 @@ public class TitleScreen extends Screen {
         g2.setColor(new Color(0,0,0, titleAlphaFilterLevel));
         g2.fillRect(0, 0, width, height);
         g2.drawImage(pressSpaceImage, (width / 2) - pressSpaceImage.getWidth(null) / 2, (height / 3) * 2, null);
+
         if(titleAlphaFilterLevel >= 200) {
             titleAlphaIncreasing = false;
         }
