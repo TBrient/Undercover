@@ -41,9 +41,9 @@ public class TitleScreen extends Screen {
 
         //Changing the alpha filter.
         if(titleAlphaIncreasing) {
-            titleAlphaFilterLevel += 3;}
+            titleAlphaFilterLevel += 5;}
         else {
-            titleAlphaFilterLevel -= 3;}
+            titleAlphaFilterLevel -= 5;}
     }
 
     @Override

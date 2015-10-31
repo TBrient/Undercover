@@ -1,6 +1,7 @@
 package source;
 
 import source.Screens.CharacterSelectScreen;
+import source.Screens.GameScreen;
 import source.Screens.ScreenHandler;
 import source.Screens.TitleScreen;
 import source.Threads.AudioThread;
@@ -20,6 +21,7 @@ public class Display {
         ScreenHandler screenHandler = new ScreenHandler();
         screenHandler.addScreen(new TitleScreen());
         screenHandler.addScreen(new CharacterSelectScreen());
+        screenHandler.addScreen(new GameScreen());
 
         GraphicsThread graphicsThread = new GraphicsThread(screenHandler);
         AudioThread audioThread = new AudioThread();
