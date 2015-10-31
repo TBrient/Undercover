@@ -9,7 +9,8 @@ import java.awt.image.BufferedImage;
  */
 public class CharacterSelectScreen extends Screen {
 
-    private int location = 0;
+    private int location = 1;
+    private static int characterChosen = 0;
     private BufferedImage ScoutImage;
 
     public void draw(Graphics2D g2, int width, int height) {
@@ -67,38 +68,54 @@ public class CharacterSelectScreen extends Screen {
     }
 
     public void keyPressed(KeyEvent e) {
-        if (e.getKeyCode() == 37) {
-            if (location == 1) {
-                location = 4;
-            } else {
-                location -= 1;
-            }
-        } else if (e.getKeyCode() == 39) {
-            if (location == 4) {
-                location = 1;
-            } else {
-                location += 1;
-            }
-        } else if (e.getKeyCode() == e.VK_ENTER) {
-            switch (location) {
-                case (1): {
-                    System.out.println("You Selected Rifleman");
-                    break;
+
+        if (characterChosen == 0){
+            if (e.getKeyCode() == 37) {
+                if (location == 1) {
+                    location = 4;
+                } else {
+                    location -= 1;
                 }
-                case (2): {
-                    System.out.println("You selected Sniper");
-                    break;
+            } else if (e.getKeyCode() == 39) {
+                if (location == 4) {
+                    location = 1;
+                } else {
+                    location += 1;
                 }
-                case (3): {
-                    System.out.println("You selected Machine Gunner");
-                    break;
+            } else if (e.getKeyCode() == e.VK_ENTER) {
+
+                characterChosen = 1;
+
+                switch (location) {
+                    case (1): {
+                        System.out.println("You Selected Rifleman");
+                        break;
+                    }
+                    case (2): {
+                        System.out.println("You selected Sniper");
+                        break;
+                    }
+                    case (3): {
+                        System.out.println("You selected Machine Gunner");
+                        break;
+                    }
+                    case (4): {
+                        System.out.println("You selected Scout");
+                        break;
+                    }
                 }
-                case (4): {
-                    System.out.println("You selected Scout");
-                    break;
+
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e1) {
+                    e1.printStackTrace();
                 }
+
+
             }
         }
+
+
     }
 }
 
