@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3c95abe-e15f-4f4b-bb8f-5ff76a19a818" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/source/Screens/CharacterSelectScreen.class" afterPath="$PROJECT_DIR$/out/source/Screens/CharacterSelectScreen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Screens/TitleScreen.java" afterPath="$PROJECT_DIR$/source/Screens/TitleScreen.java" />
+    <list default="true" id="b3c95abe-e15f-4f4b-bb8f-5ff76a19a818" name="Default" comment="Fixed a empty variable.&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/Audio/AudioFiles/Music.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/Audio/JLayer/jl1.0.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/Threads/AudioThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/Threads/GraphicsThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/contribs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jl1_0_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/source/Canvas.class" afterPath="$PROJECT_DIR$/out/source/Canvas.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/source/Display.class" afterPath="$PROJECT_DIR$/out/source/Display.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/source/Screens/TitleScreen.class" afterPath="$PROJECT_DIR$/out/source/Screens/TitleScreen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Canvas.java" afterPath="$PROJECT_DIR$/source/Canvas.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Display.java" afterPath="$PROJECT_DIR$/source/Display.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/UndercoverActive.iml" afterPath="$PROJECT_DIR$/.idea/UndercoverActive.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/.idea/UndercoverActive.iml" afterPath="$PROJECT_DIR$/out/.idea/UndercoverActive.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/.idea/workspace.xml" afterPath="$PROJECT_DIR$/out/.idea/workspace.xml" />
     </list>
     <ignored path="UndercoverActive.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,92 +41,7 @@
         <entry file="file://$PROJECT_DIR$/source/Canvas.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding>
-                <element signature="e#821#822#0" expanded="true" />
-                <element signature="e#846#847#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Display.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/Display.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CharacterSelectScreen.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/Screens/CharacterSelectScreen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Character.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/Characters/Character.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MenuCharacter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/Characters/MenuCharacter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TitleScreen.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/Screens/TitleScreen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18914473">
-              <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScreenHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/Screens/ScreenHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-              <folding>
-                <element signature="e#243#251#0" expanded="true" />
-                <element signature="e#331#332#0" expanded="true" />
-                <element signature="e#366#367#0" expanded="true" />
-                <element signature="e#406#407#0" expanded="true" />
-                <element signature="e#435#436#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Screen.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/Screens/Screen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -126,10 +53,94 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
               <folding>
-                <element signature="e#304#305#0" expanded="true" />
-                <element signature="e#354#355#0" expanded="true" />
                 <element signature="e#471#472#0" expanded="true" />
                 <element signature="e#533#534#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GraphicsThread.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/Threads/GraphicsThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#557#716#0" expanded="true" />
+                <element signature="e#715#716#0" expanded="true" />
+                <element signature="e#779#780#0" expanded="true" />
+                <element signature="e#808#809#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AudioThread.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/Threads/AudioThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#711#1137#0" expanded="true" />
+                <element signature="e#1136#1137#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contribs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/contribs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Display.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/Display.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.67105263">
+              <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CharacterSelectScreen.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/Screens/CharacterSelectScreen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="79" column="18" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Screen.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/Screens/Screen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TitleScreen.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/Screens/TitleScreen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="94" selection-start-line="19" selection-start-column="94" selection-end-line="19" selection-end-column="94" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -159,11 +170,17 @@
         <option value="$PROJECT_DIR$/source/Begin.java" />
         <option value="$PROJECT_DIR$/source/Screens/Screen.java" />
         <option value="$PROJECT_DIR$/source/Listener.java" />
-        <option value="$PROJECT_DIR$/source/Canvas.java" />
         <option value="$PROJECT_DIR$/source/Screens/ScreenHandler.java" />
-        <option value="$PROJECT_DIR$/source/Display.java" />
         <option value="$PROJECT_DIR$/source/Screens/CharacterSelectScreen.java" />
         <option value="$PROJECT_DIR$/source/Screens/TitleScreen.java" />
+        <option value="$PROJECT_DIR$/source/Threads/GameThread.java" />
+        <option value="$PROJECT_DIR$/source/Audio/PlaySound.java" />
+        <option value="$PROJECT_DIR$/source/Audio/AudioPlayer.java" />
+        <option value="$PROJECT_DIR$/source/contribs" />
+        <option value="$PROJECT_DIR$/source/Canvas.java" />
+        <option value="$PROJECT_DIR$/source/Threads/GraphicsThread.java" />
+        <option value="$PROJECT_DIR$/source/Threads/AudioThread.java" />
+        <option value="$PROJECT_DIR$/source/Display.java" />
       </list>
     </option>
   </component>
@@ -224,20 +241,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UndercoverActive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UndercoverActive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -246,14 +249,14 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="FullScreen" value="false" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
-    <property name="last_opened_file_path" value="C:/Program Files/Git/cmd/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/source/Audio/JLayer/jl1.0.1.jar!/" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
@@ -261,9 +264,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programming\Programs\IdeaProjects\UndercoverActive\source\Audio\AudioFiles" />
+      <recent name="D:\Programming\Programs\IdeaProjects\UndercoverActive\source\Audio\JLayer" />
+      <recent name="D:\Programming\Programs\IdeaProjects\UndercoverActive\source\Audio" />
       <recent name="D:\Programming\Programs\IdeaProjects\UndercoverActive\source\Screens\screenAssets" />
       <recent name="D:\Programming\Programs\IdeaProjects\UndercoverActive\source\Screens" />
-      <recent name="D:\Programming\Programs\IdeaProjects\UndercoverActive\source" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Display">
@@ -473,7 +478,13 @@
       <option name="project" value="LOCAL" />
       <updated>1446272927490</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed a empty variable.&#10;">
+      <created>1446273118531</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1446273118531</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -520,7 +531,8 @@
     <MESSAGE value="Fixed the output and test paths&#10;" />
     <MESSAGE value="Fixed the way the title screen image is loaded&#10;" />
     <MESSAGE value="Added in the spacebar text.&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added in the spacebar text.&#10;" />
+    <MESSAGE value="Fixed a empty variable.&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed a empty variable.&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -535,10 +547,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="11" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
-          <folding>
-            <element signature="e#821#822#0" expanded="true" />
-            <element signature="e#846#847#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -556,10 +565,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="11" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
-          <folding>
-            <element signature="e#821#822#0" expanded="true" />
-            <element signature="e#846#847#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -578,17 +584,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/Canvas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="e#821#822#0" expanded="true" />
-            <element signature="e#846#847#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13980263">
@@ -600,19 +595,6 @@
     <entry file="file://$PROJECT_DIR$/source/Screens/screenAssets/TitlePressSpace.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/Listener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
-          <folding>
-            <element signature="e#304#305#0" expanded="true" />
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-            <element signature="e#533#534#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/Screens/ScreenHandler.java">
@@ -629,28 +611,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/Display.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/Characters/Character.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/Screens/Screen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -660,28 +624,99 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/Screens/CharacterSelectScreen.java">
+    <entry file="file://$PROJECT_DIR$/source/Characters/MenuCharacter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.27960527">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/Characters/MenuCharacter.java">
+    <entry file="file://$PROJECT_DIR$/source/Screens/Screen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/Screens/TitleScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18914473">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="94" selection-start-line="19" selection-start-column="94" selection-end-line="19" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Screens/CharacterSelectScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="79" column="18" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/contribs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Listener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+          <folding>
+            <element signature="e#471#472#0" expanded="true" />
+            <element signature="e#533#534#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Canvas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Threads/GraphicsThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#557#716#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Threads/AudioThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#711#1137#0" expanded="true" />
+            <element signature="e#1136#1137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Display.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.67105263">
+          <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -753,6 +788,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>jl1.0.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
