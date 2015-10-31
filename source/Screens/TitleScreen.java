@@ -11,14 +11,16 @@ import java.net.URL;
  * Created by Jack on 10/30/2015.
  */
 public class TitleScreen extends Screen {
-    private Image titleScreenImage;
-    private int alphaFilterLevel = 0;
-    private boolean alphaIncreasing = true;
+    private Image titleScreenImage, pressSpaceImage;
+    private int titleAlphaFilterLevel, spaceAlphaSwitch = 0;
+    private boolean titleAlphaIncreasing = true;
 
     public TitleScreen() {
         try {
             URL imageURL = getClass().getResource("screenAssets/Undercover-Start-Screen.png");
             titleScreenImage = ImageIO.read(new File(imageURL.getPath()));
+            URL spaceImageUrl = getClass().getResource("screenAssets/TitlePressSpace.png");
+            pressSpaceImage = ImageIO.read(new File(spaceImageUrl.getPath()));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -27,22 +29,27 @@ public class TitleScreen extends Screen {
     @Override
     public void draw(Graphics2D g2, int width, int height) {
         g2.drawImage(titleScreenImage.getScaledInstance(width, height, Image.SCALE_SMOOTH), 0, 0, null);
-        g2.setColor(new Color(0,0,0,alphaFilterLevel));
+        g2.setColor(new Color(0,0,0, titleAlphaFilterLevel));
         g2.fillRect(0, 0, width, height);
-        if(alphaFilterLevel >= 200) {
-            alphaIncreasing = false;
+        g2.drawImage(pressSpaceImage, (width / 2) - pressSpaceImage.getWidth(null) / 2, (height / 3) * 2, null);
+        if(titleAlphaFilterLevel >= 200) {
+            titleAlphaIncreasing = false;
         }
-        else if(alphaFilterLevel <= 0) {
-            alphaIncreasing = true;
+        else if(titleAlphaFilterLevel <= 0) {
+            titleAlphaIncreasing = true;
         }
 
         //Changing the alpha filter.
-        if(alphaIncreasing) {alphaFilterLevel += 3;}
-        else {alphaFilterLevel -= 3;}
+        if(titleAlphaIncreasing) {
+            titleAlphaFilterLevel += 3;}
+        else {
+            titleAlphaFilterLevel -= 3;}
     }
 
     @Override
     public void keyPressed(KeyEvent e) {
-        ScreenHandler.setScreen(1);
+        if(e.getKeyCode() == KeyEvent.VK_SPACE) {
+            ScreenHandler.setScreen(1);
+        }
     }
 }

@@ -2,15 +2,13 @@ package source.Screens;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
-import java.awt.image.BufferedImage;
 
 /**
  * Created by tyler_brient on 10/29/15.
  */
 public class CharacterSelectScreen extends Screen {
 
-    private int location = 0;
-    private BufferedImage ScoutImage;
+    private int location = 1;
 
     public void draw(Graphics2D g2, int width, int height) {
         g2.setColor(new Color(125, 94, 38));

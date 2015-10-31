@@ -11,7 +11,7 @@ import javax.swing.*;
  */
 public class Display {
     public static void main(String args[]) {
-        JFrame window = new JFrame("Selection source.Screens.Screen");
+        JFrame window = new JFrame("Undercover");
         window.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         window.setBounds(0, 0, 1400, 800);
         ScreenHandler screenHandler = new ScreenHandler();
