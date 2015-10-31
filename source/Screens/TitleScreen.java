@@ -5,6 +5,7 @@ import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 
 /**
  * Created by Jack on 10/30/2015.
@@ -16,7 +17,8 @@ public class TitleScreen extends Screen {
 
     public TitleScreen() {
         try {
-            titleScreenImage = ImageIO.read(new File("D:\\Programming\\Programs\\IdeaProjects\\UndercoverActive\\source\\Screens\\screenAssets\\Undercover-Start-Screen.png"));
+            URL imageURL = getClass().getResource("screenAssets/Undercover-Start-Screen.png");
+            titleScreenImage = ImageIO.read(new File(imageURL.getPath()));
         } catch (IOException e) {
             e.printStackTrace();
         }
