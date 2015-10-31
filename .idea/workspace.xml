@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3c95abe-e15f-4f4b-bb8f-5ff76a19a818" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/Screens/screenAssets/TitlePressSpace.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/source/Display.class" afterPath="$PROJECT_DIR$/out/source/Display.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/source/Screens/TitleScreen.class" afterPath="$PROJECT_DIR$/out/source/Screens/TitleScreen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Screens/CharacterSelectScreen.java" afterPath="$PROJECT_DIR$/source/Screens/CharacterSelectScreen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Display.java" afterPath="$PROJECT_DIR$/source/Display.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/source/Screens/CharacterSelectScreen.class" afterPath="$PROJECT_DIR$/out/source/Screens/CharacterSelectScreen.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Screens/TitleScreen.java" afterPath="$PROJECT_DIR$/source/Screens/TitleScreen.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -54,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CharacterSelectScreen.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CharacterSelectScreen.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/Screens/CharacterSelectScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2236842">
-              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TitleScreen.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TitleScreen.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/Screens/TitleScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="112" selection-start-line="33" selection-start-column="112" selection-end-line="33" selection-end-column="112" />
+            <state vertical-scroll-proportion="0.18914473">
+              <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -166,8 +162,8 @@
         <option value="$PROJECT_DIR$/source/Canvas.java" />
         <option value="$PROJECT_DIR$/source/Screens/ScreenHandler.java" />
         <option value="$PROJECT_DIR$/source/Display.java" />
-        <option value="$PROJECT_DIR$/source/Screens/TitleScreen.java" />
         <option value="$PROJECT_DIR$/source/Screens/CharacterSelectScreen.java" />
+        <option value="$PROJECT_DIR$/source/Screens/TitleScreen.java" />
       </list>
     </option>
   </component>
@@ -239,64 +235,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UndercoverActive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UndercoverActive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Screens" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UndercoverActive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UndercoverActive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Screens" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="screenAssets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UndercoverActive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UndercoverActive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Characters" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -529,7 +467,13 @@
       <option name="project" value="LOCAL" />
       <updated>1446269573926</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added in the spacebar text.&#10;">
+      <created>1446272927490</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1446272927490</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -575,7 +519,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed the output and test paths&#10;" />
     <MESSAGE value="Fixed the way the title screen image is loaded&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed the way the title screen image is loaded&#10;" />
+    <MESSAGE value="Added in the spacebar text.&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added in the spacebar text.&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -702,14 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/Characters/MenuCharacter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/Screens/Screen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -723,20 +660,28 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/Screens/TitleScreen.java">
+    <entry file="file://$PROJECT_DIR$/source/Screens/CharacterSelectScreen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="112" selection-start-line="33" selection-start-column="112" selection-end-line="33" selection-end-column="112" />
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/Screens/CharacterSelectScreen.java">
+    <entry file="file://$PROJECT_DIR$/source/Characters/MenuCharacter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2236842">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Screens/TitleScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18914473">
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

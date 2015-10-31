@@ -12,7 +12,7 @@ import java.net.URL;
  */
 public class TitleScreen extends Screen {
     private Image titleScreenImage, pressSpaceImage;
-    private int titleAlphaFilterLevel, spaceAlphaSwitch = 0;
+    private int titleAlphaFilterLevel = 0;
     private boolean titleAlphaIncreasing = true;
 
     public TitleScreen() {
