@@ -33,19 +33,6 @@ public class Begin {
 
                 int characterChosen = 0;
                 int enter = 0;
-                if (keyEvent.getKeyCode() == KeyEvent.VK_ENTER) {
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-
-                    Screen screen1 = new Screen(2);
-                    enter = 1;
-
-
-                }
-
 
                 if (keyEvent.getKeyCode() == 37 && characterChosen == 0) {
                     if (Location == 1) {
@@ -59,7 +46,18 @@ public class Begin {
                     } else {
                         Location += 1;
                     }
-                } else if (keyEvent.getKeyCode() == KeyEvent.VK_ENTER && enter == 1) {
+                } else if (keyEvent.getKeyCode() == KeyEvent.VK_ENTER) {
+                    if (enter == 0) {
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
+                    Screen screen1 = new Screen(2);
+                    enter = 1;
+
+                    } else if (enter == 1) {
                     characterChosen = 1;
                     switch (Location) {
                         case (1): {
@@ -84,6 +82,7 @@ public class Begin {
                             break;
                         }
                     }
+                }
                 }
             }
         
