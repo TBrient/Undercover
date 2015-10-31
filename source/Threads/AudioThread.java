@@ -12,15 +12,20 @@ import java.util.concurrent.CountDownLatch;
 public class AudioThread extends Thread implements Runnable {
 
     private MediaPlayer mediaPlayer;
+    private boolean latchWorked;
 
     public void run() {
+        latchWorked = false;
         new JFXPanel();
         CountDownLatch latch = new CountDownLatch(1);
         latch.countDown();
-        try {
-            latch.await();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+        while (!latchWorked) {
+            try {
+                latch.await();
+                latchWorked = true;
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
         try {
             mediaPlayer = new MediaPlayer(new javafx.scene.media.Media(getClass().getResource("../Audio/AudioFiles/Music.mp3").toURI().toString()));

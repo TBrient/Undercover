@@ -96,6 +96,7 @@ public class CharacterSelectScreen extends Screen {
                     break;
                 }
             }
+            ScreenHandler.setScreen(2);
         }
     }
 }
