@@ -5,6 +5,7 @@ package source.Characters;
  */
 public abstract class Character {
     private int healthPoints, damage, fireRate, speed, mana;
+
     public Character (int healthPoints, int damage, int fireRate, int speed, int mana){
         this.healthPoints = healthPoints;
         this.damage = damage;
@@ -12,6 +13,7 @@ public abstract class Character {
         this.speed = speed;
         this.mana = mana;
     }
+
     //Define the methods that the character should have here.
 
     protected int getHealthPoints() {
