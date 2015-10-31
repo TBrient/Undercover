@@ -10,7 +10,8 @@ import java.lang.reflect.Array;
 public class Begin {
     private static int Location = 1;
     private static Character character;
-
+    private static int enter;
+    private static int characterChosen = 0;
     public static void Start() {
 
 
@@ -31,8 +32,7 @@ public class Begin {
 
             public void keyPressed(KeyEvent keyEvent) {
 
-                int characterChosen = 0;
-                int enter = 0;
+
 
                 if (keyEvent.getKeyCode() == 37) {
                     if (characterChosen == 0) {
@@ -53,49 +53,83 @@ public class Begin {
                 } else if (keyEvent.getKeyCode() == KeyEvent.VK_ENTER) {
 
 
-                        characterChosen = 1;
-                    if (enter == 0) {
-                        try {
-                            Thread.sleep(1000);
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
-                        Screen screen1 = new Screen(2);
-                        enter = 1;
-                    } else if (enter == 1) {
+
+                    if (enter == 1) {
                         switch (Location) {
                             case (1): {
                                 System.out.println("You Selected Rifleman");
                                 character = new Character(1);
+                                characterChosen = 1;
                                 break;
                             }
                             case (2): {
                                 System.out.println("You selected Sniper");
                                 character = new Character(2);
+                                characterChosen = 1;
                                 break;
                             }
                             case (3): {
                                 System.out.println("You selected Machine Gunner");
                                 character = new Character(3);
+                                characterChosen = 1;
                                 break;
                             }
                             case (4): {
                                 System.out.println("You selected Scout");
                                 character = new Character(4);
+                                characterChosen = 1;
                                 break;
 
                             }
                         }
-                    }
-                } else if (keyEvent.getKeyCode() == KeyEvent.VK_SPACE) {
-                    if (enter == 0) {
+                    } else if (enter == 0) {
+                        enter = 1;
                         try {
                             Thread.sleep(1000);
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
                         Screen screen1 = new Screen(2);
+
+                    }
+                } else if (keyEvent.getKeyCode() == KeyEvent.VK_SPACE) {
+                    if (enter == 1) {
+                        switch (Location) {
+                            case (1): {
+                                System.out.println("You Selected Rifleman");
+                                character = new Character(1);
+                                characterChosen = 1;
+                                break;
+                            }
+                            case (2): {
+                                System.out.println("You selected Sniper");
+                                character = new Character(2);
+                                characterChosen = 1;
+                                break;
+                            }
+                            case (3): {
+                                System.out.println("You selected Machine Gunner");
+                                character = new Character(3);
+                                characterChosen = 1;
+                                break;
+                            }
+                            case (4): {
+                                System.out.println("You selected Scout");
+                                character = new Character(4);
+                                characterChosen = 1;
+                                break;
+
+                            }
+                        }
+                    } else if (enter == 0) {
                         enter = 1;
+                        try {
+                            Thread.sleep(1000);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                        Screen screen1 = new Screen(2);
+
                     }
                 }
             }
