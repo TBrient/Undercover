@@ -34,55 +34,57 @@ public class Begin {
                 int characterChosen = 0;
                 int enter = 0;
 
-                if (keyEvent.getKeyCode() == 37 && characterChosen == 0) {
-                    if (Location == 1) {
-                        Location = 4;
-                    } else {
-                        Location -= 1;
+                if (keyEvent.getKeyCode() == 37) {
+                    if (characterChosen == 0) {
+                        if (Location == 1) {
+                            Location = 4;
+                        } else {
+                            Location -= 1;
+                        }
                     }
-                } else if (keyEvent.getKeyCode() == 39 && characterChosen == 0) {
-                    if (Location == 4) {
-                        Location = 1;
-                    } else {
-                        Location += 1;
+                } else if (keyEvent.getKeyCode() == 39) {
+                    if (characterChosen == 0) {
+                        if (Location == 4) {
+                            Location = 1;
+                        } else {
+                            Location += 1;
+                        }
                     }
                 } else if (keyEvent.getKeyCode() == KeyEvent.VK_ENTER) {
+                        characterChosen = 1;
+                        switch (Location) {
+                            case (1): {
+                                System.out.println("You Selected Rifleman");
+                                character = new Character(1);
+                                break;
+                            }
+                            case (2): {
+                                System.out.println("You selected Sniper");
+                                character = new Character(2);
+                                break;
+                            }
+                            case (3): {
+                                System.out.println("You selected Machine Gunner");
+                                character = new Character(3);
+                                break;
+                            }
+                            case (4): {
+                                System.out.println("You selected Scout");
+                                character = new Character(4);
+                                break;
+                            
+                        }
+                    }
+                } else if (keyEvent.getKeyCode() == KeyEvent.VK_SPACE) {
                     if (enter == 0) {
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
+                        try {
+                            Thread.sleep(1000);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                        Screen screen1 = new Screen(2);
+                        enter = 1;
                     }
-
-                    Screen screen1 = new Screen(2);
-                    enter = 1;
-
-                    } else if (enter == 1) {
-                    characterChosen = 1;
-                    switch (Location) {
-                        case (1): {
-                            System.out.println("You Selected Rifleman");
-                            character = new Character(1);
-                            break;
-                        }
-                        case (2): {
-                            System.out.println("You selected Sniper");
-                            character = new Character(2);
-
-                            break;
-                        }
-                        case (3): {
-                            System.out.println("You selected Machine Gunner");
-                            character = new Character(3);
-                            break;
-                        }
-                        case (4): {
-                            System.out.println("You selected Scout");
-                            character = new Character(4);
-                            break;
-                        }
-                    }
-                }
                 }
             }
         
