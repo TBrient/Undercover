@@ -10,8 +10,7 @@ public class GameScreen extends Screen{
 
     @Override
     public void draw(Graphics2D g2, int width, int height) {
-        g2.fillRect(0, 0, 1000, 1000);
-
+        g2.fillRect(0, 0, width, height);
     }
 
     @Override
