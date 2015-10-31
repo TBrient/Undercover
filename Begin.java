@@ -19,7 +19,7 @@ public class Begin {
         JFrame window = new JFrame("Selection Screen");
 
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        window.setBounds(0, 0, 1400, 800);
+        window.setBounds(0, 0, 1440, 900);
 
 
 

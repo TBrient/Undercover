@@ -14,6 +14,7 @@ public class Screen extends JPanel implements ActionListener {
     public Screen(int i){
         this.i = i;
     }
+
     public void paintComponent(Graphics g) {
         g2 = (Graphics2D) g;
         timer = new Timer(1000 / 60, this);

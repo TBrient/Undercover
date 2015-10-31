@@ -1,10 +1,15 @@
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 
 /**
  * Created by tyler_brient on 10/29/15.
  */
 public class CharacterSelectScreen extends JPanel {
+    private BufferedImage ScoutImage;
     public void drawClasses(Graphics2D g2) {
         g2.setColor(new Color(125, 94, 38));
         g2.fillRect(0, 0, 1400, 800);
