@@ -18,26 +18,49 @@ public class Begin {
 
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setBounds(0, 0, 1400, 800);
-        Screen screen = new Screen();
+
+
+
+        Screen screen = new Screen(1);
         window.add(screen);
         window.setVisible(true);
 
+
         window.addKeyListener(new KeyAdapter() {
             @Override
+
             public void keyPressed(KeyEvent keyEvent) {
-                if (keyEvent.getKeyCode() == 37) {
+
+                int characterChosen = 0;
+                int enter = 0;
+                if (keyEvent.getKeyCode() == KeyEvent.VK_ENTER) {
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
+                    Screen screen1 = new Screen(2);
+                    enter = 1;
+
+
+                }
+
+
+                if (keyEvent.getKeyCode() == 37 && characterChosen == 0) {
                     if (Location == 1) {
                         Location = 4;
                     } else {
                         Location -= 1;
                     }
-                } else if (keyEvent.getKeyCode() == 39) {
+                } else if (keyEvent.getKeyCode() == 39 && characterChosen == 0) {
                     if (Location == 4) {
                         Location = 1;
                     } else {
                         Location += 1;
                     }
-                } else if (keyEvent.getKeyCode() == KeyEvent.VK_ENTER) {
+                } else if (keyEvent.getKeyCode() == KeyEvent.VK_ENTER && enter == 1) {
+                    characterChosen = 1;
                     switch (Location) {
                         case (1): {
                             System.out.println("You Selected Rifleman");
@@ -63,6 +86,7 @@ public class Begin {
                     }
                 }
             }
+        
         });
     }
 
