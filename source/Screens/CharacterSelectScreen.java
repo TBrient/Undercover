@@ -2,7 +2,6 @@ package source.Screens;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
-import java.awt.image.BufferedImage;
 
 /**
  * Created by tyler_brient on 10/29/15.
@@ -10,8 +9,11 @@ import java.awt.image.BufferedImage;
 public class CharacterSelectScreen extends Screen {
 
     private int location = 1;
+<<<<<<< HEAD
+=======
     private static int characterChosen = 0;
     private BufferedImage ScoutImage;
+>>>>>>> refs/remotes/origin/master
 
     public void draw(Graphics2D g2, int width, int height) {
         g2.setColor(new Color(125, 94, 38));
@@ -113,6 +115,7 @@ public class CharacterSelectScreen extends Screen {
 
 
             }
+            ScreenHandler.setScreen(2);
         }
 
 
