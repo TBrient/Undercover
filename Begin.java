@@ -3,15 +3,16 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.lang.*;
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 /**
  * Created by tyler_brient on 10/29/15.
  */
 public class Begin {
     private static int Location = 1;
-    private static Character character;
     private static int enter;
     private static int characterChosen = 0;
+    private static ArrayList<Integer> characterStats;
     public static void Start() {
 
 
@@ -57,25 +58,61 @@ public class Begin {
                             switch (Location) {
                                 case (1): {
                                     System.out.println("You Selected Rifleman");
-                                    character = new Character(1);
+                                    Character character = new Character(1);
+                                    characterStats = character.returnCharacter();
+
+                                    try {
+                                        Thread.sleep(1000);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+
+                                    Screen screen1 = new Screen(1);
                                     characterChosen = 1;
                                     break;
                                 }
                                 case (2): {
                                     System.out.println("You selected Sniper");
-                                    character = new Character(2);
+                                    Character character = new Character(2);
+                                    characterStats = character.returnCharacter();
+
+                                    try {
+                                        Thread.sleep(1000);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+
+                                    Screen screen1 = new Screen(1);
                                     characterChosen = 1;
                                     break;
                                 }
                                 case (3): {
                                     System.out.println("You selected Machine Gunner");
-                                    character = new Character(3);
+                                    Character character = new Character(3);
+                                    characterStats = character.returnCharacter();
+
+                                    try {
+                                        Thread.sleep(1000);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+
+                                    Screen screen1 = new Screen(1);
                                     characterChosen = 1;
                                     break;
                                 }
                                 case (4): {
                                     System.out.println("You selected Scout");
-                                    character = new Character(4);
+                                    Character character = new Character(4);
+                                    characterStats = character.returnCharacter();
+
+                                    try {
+                                        Thread.sleep(1000);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+
+                                    Screen screen1 = new Screen(1);
                                     characterChosen = 1;
                                     break;
 
@@ -96,25 +133,61 @@ public class Begin {
                             switch (Location) {
                                 case (1): {
                                     System.out.println("You Selected Rifleman");
-                                    character = new Character(1);
+                                    Character character = new Character(1);
+                                    characterStats = character.returnCharacter();
+
+                                    try {
+                                        Thread.sleep(1000);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+
+                                    Screen screen1 = new Screen(1);
                                     characterChosen = 1;
                                     break;
                                 }
                                 case (2): {
                                     System.out.println("You selected Sniper");
-                                    character = new Character(2);
+                                    Character character = new Character(2);
+                                    characterStats = character.returnCharacter();
+
+                                    try {
+                                        Thread.sleep(1000);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+
+                                    Screen screen1 = new Screen(1);
                                     characterChosen = 1;
                                     break;
                                 }
                                 case (3): {
                                     System.out.println("You selected Machine Gunner");
-                                    character = new Character(3);
+                                    Character character = new Character(3);
+                                    characterStats = character.returnCharacter();
+
+                                    try {
+                                        Thread.sleep(1000);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+
+                                    Screen screen1 = new Screen(1);
                                     characterChosen = 1;
                                     break;
                                 }
                                 case (4): {
                                     System.out.println("You selected Scout");
-                                    character = new Character(4);
+                                    Character character = new Character(4);
+                                    characterStats = character.returnCharacter();
+
+                                    try {
+                                        Thread.sleep(1000);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+
+                                    Screen screen1 = new Screen(1);
                                     characterChosen = 1;
                                     break;
 
@@ -130,10 +203,8 @@ public class Begin {
                             Screen screen1 = new Screen(2);
 
                         }
+
                     }
-                } else if (characterChosen == 1){
-                    // YEYEYEYEYE
-                    Screen screen1 = new Screen(1);
                 }
             }
 
@@ -144,7 +215,6 @@ public class Begin {
         return Location;
     }
 
-    public Character getCharacter(){
-        return character;
-    }
+    public ArrayList<Integer> getCharacterStats() {return characterStats;}
+
 }
