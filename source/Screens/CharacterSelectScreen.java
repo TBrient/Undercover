@@ -1,7 +1,10 @@
 package source.Screens;
 
+import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.event.KeyEvent;
+import java.io.File;
+import java.io.IOException;
 
 /**
  * Created by tyler_brient on 10/29/15.
@@ -9,66 +12,72 @@ import java.awt.event.KeyEvent;
 public class CharacterSelectScreen extends Screen {
 
     private int location = 1;
-<<<<<<< HEAD
-=======
     private static int characterChosen = 0;
-    private BufferedImage ScoutImage;
->>>>>>> refs/remotes/origin/master
+    private Image bulletin;
+
+    public CharacterSelectScreen() {
+        try {
+            bulletin  = ImageIO.read(new File(getClass().getResource("screenAssets/Bulletin.jpg").getPath()));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     public void draw(Graphics2D g2, int width, int height) {
-        g2.setColor(new Color(125, 94, 38));
-        g2.fillRect(0, 0, 1400, 800);
-        g2.setColor(Color.RED);
-        g2.fillRoundRect(150, 400, 200, 200, 25, 25);
-        g2.setColor(Color.GREEN);
-        g2.fillRoundRect(450, 400, 200, 200, 25, 25);
-        g2.setColor(Color.BLUE);
-        g2.fillRoundRect(750, 400, 200, 200, 25, 25);
-        g2.setColor(Color.YELLOW);
-        g2.fillRoundRect(1050, 400, 200, 200, 25, 25);
-        drawCubes(g2);
+//        g2.setColor(new Color(125, 94, 38));
+//        g2.fillRect(0, 0, 1400, 800);
+//        g2.setColor(Color.RED);
+//        g2.fillRoundRect(150, 400, 200, 200, 25, 25);
+//        g2.setColor(Color.GREEN);
+//        g2.fillRoundRect(450, 400, 200, 200, 25, 25);
+//        g2.setColor(Color.BLUE);
+//        g2.fillRoundRect(750, 400, 200, 200, 25, 25);
+//        g2.setColor(Color.YELLOW);
+//        g2.fillRoundRect(1050, 400, 200, 200, 25, 25);
+//        drawCubes(g2);
+        g2.drawImage(bulletin.getScaledInstance(width, height, Image.SCALE_SMOOTH),0,0,null);
     }
 
-    public void drawCubes(Graphics2D g2) {
-        g2.setColor(new Color(65, 255, 230, 40));
-        switch(location) {
-            case (1) : {
-                g2.fillRoundRect(125, 375, 250, 250, 25, 25);
-                break;
-            }
-            case (2) : {
-                g2.fillRoundRect(425, 375, 250, 250, 25, 25);
-                break;
-            }
-            case (3) : {
-                g2.fillRoundRect(725, 375, 250, 250, 25, 25);
-                break;
-            }
-            case (4) : {
-                g2.fillRoundRect(1025, 375, 250, 250, 25, 25);
-            }
-        }
-        switch(location) {
-            case(1) : {
-                g2.setColor(Color.RED);
-                break;
-            }
-            case (2) : {
-                g2.setColor(Color.GREEN);
-                break;
-            }
-            case (3) : {
-                g2.setColor(Color.BLUE);
-                break;
-            }
-            case (4) : {
-                g2.setColor(Color.YELLOW);
-                break;
-            }
-        }
-        g2.fillRoundRect(700, 100, 50, 50, 25, 25);
-    }
-
+//    public void drawCubes(Graphics2D g2) {
+//        g2.setColor(new Color(65, 255, 230, 40));
+//        switch(location) {
+//            case (1) : {
+//                g2.fillRoundRect(125, 375, 250, 250, 25, 25);
+//                break;
+//            }
+//            case (2) : {
+//                g2.fillRoundRect(425, 375, 250, 250, 25, 25);
+//                break;
+//            }
+//            case (3) : {
+//                g2.fillRoundRect(725, 375, 250, 250, 25, 25);
+//                break;
+//            }
+//            case (4) : {
+//                g2.fillRoundRect(1025, 375, 250, 250, 25, 25);
+//            }
+//        }
+//        switch(location) {
+//            case(1) : {
+//                g2.setColor(Color.RED);
+//                break;
+//            }
+//            case (2) : {
+//                g2.setColor(Color.GREEN);
+//                break;
+//            }
+//            case (3) : {
+//                g2.setColor(Color.BLUE);
+//                break;
+//            }
+//            case (4) : {
+//                g2.setColor(Color.YELLOW);
+//                break;
+//            }
+//        }
+//        g2.fillRoundRect(700, 100, 50, 50, 25, 25);
+//    }
+//
     public void keyPressed(KeyEvent e) {
 
         if (characterChosen == 0){
