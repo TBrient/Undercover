@@ -51,7 +51,18 @@ public class Begin {
                         }
                     }
                 } else if (keyEvent.getKeyCode() == KeyEvent.VK_ENTER) {
+
+
                         characterChosen = 1;
+                    if (enter == 0) {
+                        try {
+                            Thread.sleep(1000);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                        Screen screen1 = new Screen(2);
+                        enter = 1;
+                    } else if (enter == 1) {
                         switch (Location) {
                             case (1): {
                                 System.out.println("You Selected Rifleman");
@@ -72,7 +83,8 @@ public class Begin {
                                 System.out.println("You selected Scout");
                                 character = new Character(4);
                                 break;
-                            
+
+                            }
                         }
                     }
                 } else if (keyEvent.getKeyCode() == KeyEvent.VK_SPACE) {
@@ -87,7 +99,7 @@ public class Begin {
                     }
                 }
             }
-        
+
         });
     }
 

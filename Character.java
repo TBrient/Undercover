@@ -30,6 +30,7 @@ public class Character {
         character.add(fireRate[i]);
         character.add(speed[i]);
         character.add(mana[i]);
+        System.out.println(character);
         return character;
     }
 //    public static void main(String[] args) {
