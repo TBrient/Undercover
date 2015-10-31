@@ -19,10 +19,9 @@ public class CharacterSelectScreen extends Screen {
         try {
             bulletin  = ImageIO.read(new File(getClass().getResource("screenAssets/Bulletin.jpg").getPath()));
         } catch (IOException e) {
-            e.printStackTrace();
+           e.printStackTrace();
         }
     }
-
     public void draw(Graphics2D g2, int width, int height) {
 //        g2.setColor(new Color(125, 94, 38));
 //        g2.fillRect(0, 0, 1400, 800);
@@ -35,7 +34,7 @@ public class CharacterSelectScreen extends Screen {
 //        g2.setColor(Color.YELLOW);
 //        g2.fillRoundRect(1050, 400, 200, 200, 25, 25);
 //        drawCubes(g2);
-        g2.drawImage(bulletin.getScaledInstance(width, height, Image.SCALE_SMOOTH),0,0,null);
+          g2.drawImage(bulletin.getScaledInstance(width, height, Image.SCALE_SMOOTH),0,0,null);
     }
 
 //    public void drawCubes(Graphics2D g2) {
@@ -77,7 +76,7 @@ public class CharacterSelectScreen extends Screen {
 //        }
 //        g2.fillRoundRect(700, 100, 50, 50, 25, 25);
 //    }
-//
+
     public void keyPressed(KeyEvent e) {
 
         if (characterChosen == 0){
@@ -124,7 +123,6 @@ public class CharacterSelectScreen extends Screen {
 
 
             }
-            ScreenHandler.setScreen(2);
         }
 
 
