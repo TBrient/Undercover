@@ -13,28 +13,25 @@ public class CharacterSelectScreen extends Screen {
 
     private int location = 1;
     private static int characterChosen = 0;
-    private Image bulletin;
+    private Image scout, rifle, machine, sniper, bulletin;
 
     public CharacterSelectScreen() {
         try {
-            bulletin  = ImageIO.read(new File(getClass().getResource("screenAssets/Bulletin.jpg").getPath()));
+            bulletin = ImageIO.read(new File(getClass().getResource("screenAssets/Bulletin.jpg").getPath()));
+            scout = ImageIO.read(new File(getClass().getResource("screenAssets/Scout.png").getPath()));
+            rifle = ImageIO.read(new File(getClass().getResource("screenAssets/Rifleman.png").getPath()));
+            machine = ImageIO.read(new File(getClass().getResource("screenAssets/MachineGunner.png").getPath()));
+            sniper = ImageIO.read(new File(getClass().getResource("screenAssets/Sniper.png").getPath()));
         } catch (IOException e) {
            e.printStackTrace();
         }
     }
     public void draw(Graphics2D g2, int width, int height) {
-//        g2.setColor(new Color(125, 94, 38));
-//        g2.fillRect(0, 0, 1400, 800);
-//        g2.setColor(Color.RED);
-//        g2.fillRoundRect(150, 400, 200, 200, 25, 25);
-//        g2.setColor(Color.GREEN);
-//        g2.fillRoundRect(450, 400, 200, 200, 25, 25);
-//        g2.setColor(Color.BLUE);
-//        g2.fillRoundRect(750, 400, 200, 200, 25, 25);
-//        g2.setColor(Color.YELLOW);
-//        g2.fillRoundRect(1050, 400, 200, 200, 25, 25);
-//        drawCubes(g2);
-          g2.drawImage(bulletin.getScaledInstance(width, height, Image.SCALE_SMOOTH),0,0,null);
+        g2.drawImage(bulletin.getScaledInstance(width, height, Image.SCALE_SMOOTH), 0, 0, null);
+        g2.drawImage(scout.getScaledInstance(rifle.getWidth(null), rifle.getHeight(null), Image.SCALE_SMOOTH), 0,0,null);
+        g2.drawImage(rifle, rifle.getWidth(null),0,null);
+        g2.drawImage(machine,0,machine.getHeight(null),null);
+        g2.drawImage(sniper,sniper.getWidth(null),sniper.getHeight(null),null);
     }
 
 //    public void drawCubes(Graphics2D g2) {
