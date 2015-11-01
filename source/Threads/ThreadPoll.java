@@ -7,7 +7,7 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * Created by spam on 11/1/2015.
+ * Created by s0urc3d3v3l0pm3nt on 11/1/2015.
  */
 public class ThreadPoll extends Thread {
     private BufferedImage img;
