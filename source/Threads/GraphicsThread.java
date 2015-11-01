@@ -21,6 +21,7 @@ public class GraphicsThread extends Thread {
     }
 
     public void run() {
+        //Don't use this thread except for stuff the user will actuially see otherwise use another
         Timer timer = new Timer(1000 / 60, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
