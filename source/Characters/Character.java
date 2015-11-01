@@ -1,5 +1,7 @@
 package source.Characters;
 
+import java.awt.event.KeyEvent;
+
 /**
  * Created by kanming_xu on 10/28/15.
  */
@@ -55,5 +57,8 @@ public abstract class Character {
     protected void setMana(int mana) {
         this.mana = mana;
     }
+
+    public abstract void move(KeyEvent e);
+
 
 }
