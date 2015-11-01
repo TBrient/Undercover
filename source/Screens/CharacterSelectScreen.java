@@ -21,7 +21,7 @@ public class CharacterSelectScreen extends Screen {
     public CharacterSelectScreen() {
         images = new ArrayList<Image>();
         try {
-            images.add(ImageIO.read(new File(getClass().getResource("screenAssets/Bulletin.jpg").getPath())));
+            images.add(ImageIO.read(new File(getClass().getResource("screenAssets/CorkBoard.png").getPath())));
             images.add(ImageIO.read(new File(getClass().getResource("screenAssets/Scout.png").getPath())));
             images.add(ImageIO.read(new File(getClass().getResource("screenAssets/Rifleman.png").getPath())));
             images.add(ImageIO.read(new File(getClass().getResource("screenAssets/MachineGunner.png").getPath())));
