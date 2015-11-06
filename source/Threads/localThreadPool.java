@@ -1,21 +1,19 @@
 package source.Threads;
 
-import source.IO.Read;
-
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.*;
+import java.io.File;
+import java.io.IOException;
 
 /**
  * Created by s0urc3d3v3l0pm3nt on 11/1/2015.
  */
-public class ThreadPoll extends Thread {
-    private BufferedImage img;
-    private long total;
-    private String fileContents;
+public class localThreadPool extends Thread {
+    private static BufferedImage img;
+    private static long total;
 
-    public Image loadImage(final String PATH) {
+    public static Image loadImage(final String PATH) {
         Thread loadImageThread = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -30,24 +28,7 @@ public class ThreadPoll extends Thread {
         return img;
     }
 
-    public void playSound(String PATH){
-        final Thread load = new Thread(new Runnable() {
-            @Override
-            public void run() {
-
-            }
-        });
-
-        Thread music = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                load.start();
-            }
-        });
-
-    }
-
-    public long doMath(final int x, final int y, String operation) {
+    public long doMath(final long x, final long y, String operation) {
         if (operation.toLowerCase().contains("add")) {
             Thread addThread = new Thread(new Runnable() {
                 @Override
@@ -86,16 +67,28 @@ public class ThreadPoll extends Thread {
         }
         return total;
     }
-    public String loadFromFile(final String PATH){
-        Thread readFromFile = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                fileContents = Read.read(PATH);
-            }
-        });
-        return fileContents;
+
+    interface backgroundThread {
+        void doInBackground();
     }
 
+    public static void doInBackground(final backgroundThread code){
+        //To use Lambda just define some code ()->{code here}; and define like this backgroundThread doStuff = ()->{code here};
+        //Then call like so doInBackground(definedCode);
+        try {
+            Thread t = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    code.doInBackground();
+                }
+            });
+            t.start();
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+    }
 }
+
+
 
 

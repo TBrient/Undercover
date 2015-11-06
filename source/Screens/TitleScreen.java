@@ -1,5 +1,7 @@
 package source.Screens;
 
+import source.Threads.localThreadPool;
+
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -17,11 +19,14 @@ public class TitleScreen extends Screen {
 
     public TitleScreen() {
         try {
+            /*
+            Loading on the main thread is a bad idea and therefore this should be deprecated
+            */
             URL imageURL = getClass().getResource("screenAssets/Undercover-Start-Screen.png");
             titleScreenImage = ImageIO.read(new File(imageURL.getPath()));
             URL spaceImageUrl = getClass().getResource("screenAssets/TitlePressSpace.png");
             pressSpaceImage = ImageIO.read(new File(spaceImageUrl.getPath()));
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -53,4 +58,6 @@ public class TitleScreen extends Screen {
             ScreenHandler.setScreen(1);
         }
     }
+
 }
+
