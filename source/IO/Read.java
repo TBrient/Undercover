@@ -7,7 +7,7 @@ import java.io.FileReader;
  * Created by Matthewelbing on 11/3/15.
  */
 public class Read {
-    public static String read(String PATH){
+    public static String getFileContents(String PATH){
         try {
             BufferedReader reader = new BufferedReader(new FileReader(PATH));
             StringBuilder builder = new StringBuilder();
